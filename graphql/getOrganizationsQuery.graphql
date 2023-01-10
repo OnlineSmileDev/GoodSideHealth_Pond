@@ -1,0 +1,7 @@
+query getOrganizations {
+  organizations: organizations_organizations {
+    id
+    name
+    slug
+  }
+}

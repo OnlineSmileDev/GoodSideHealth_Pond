@@ -1,0 +1,99 @@
+[
+  {
+    "definitions": {
+      "Options": {
+        "type": "number",
+        "enum": ["0", "1", "2", "3"]
+      },
+      "PH8": {
+        "title": "",
+        "type": "object",
+        "properties": {
+          "sleep": {
+            "$ref": "#/definitions/Options"
+          },
+          "energy": {
+            "$ref": "#/definitions/Options"
+          },
+          "appetite": {
+            "$ref": "#/definitions/Options"
+          },
+          "self": {
+            "$ref": "#/definitions/Options"
+          },
+          "concentration": {
+            "$ref": "#/definitions/Options"
+          },
+          "slow": {
+            "$ref": "#/definitions/Options"
+          },
+          "suicide": {
+            "$ref": "#/definitions/Options"
+          },
+          "difficulty": {
+            "$ref": "#/definitions/Options"
+          }
+        }
+      }
+    },
+    "type": "object",
+    "properties": {
+      "PH2": {
+        "title": "",
+        "type": "object",
+        "dependencies": {
+          "interest": {
+            "oneOf": [
+              {
+                "properties": {
+                  "interest": {
+                    "enum": [0]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "interest": {
+                    "enum": [1, 2, 3]
+                  },
+                  "PH8": {
+                    "$ref": "#/definitions/PH8"
+                  }
+                }
+              }
+            ]
+          },
+          "depression": {
+            "oneOf": [
+              {
+                "properties": {
+                  "depression": {
+                    "enum": [0]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "depression": {
+                    "enum": [1, 2, 3]
+                  },
+                  "PH8": {
+                    "$ref": "#/definitions/PH8"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "properties": {
+          "interest": {
+            "$ref": "#/definitions/Options"
+          },
+          "depression": {
+            "$ref": "#/definitions/Options"
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,44 @@
+query getVisit($id: Int!) {
+  visits_by_pk(id: $id) {
+    allergies
+    dateOfBirth: date_of_birth
+    firstName: first_name
+    lastName: last_name
+    knownMedications: medications
+    patientId: patient_id
+    primaryLanguage: language
+    pharmacy_address
+    pharmacy_address2
+    pharmacy_city
+    pharmacy_name
+    visitReason: visit_reason
+    status
+    createdAt: created_at
+    knownConditions: conditions
+    sessionId: session_id
+    additionalNotes: additional_notes
+    stationVisits: station_visit {
+      stationId: station_id
+    }
+    session {
+      stations(order_by: { position: asc }) {
+        id
+      }
+    }
+    location {
+      name
+    }
+    orders {
+      status
+      id
+      orderType: order_type {
+        category
+        name
+        form_type_id
+      }
+      completed_at
+      follow_up_instructions
+      is_flagged
+    }
+  }
+}

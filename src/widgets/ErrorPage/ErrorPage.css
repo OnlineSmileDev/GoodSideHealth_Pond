@@ -1,0 +1,15 @@
+.container-background {
+  background-image: url(../../assets/icons/errorBackground.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 1000px; */
+  /* width: 100%; */
+  display: block;
+  margin: auto;
+}
+
+.div-container {
+  min-height: 500px !important;
+  display: flex !important;
+  align-items: center !important;
+}

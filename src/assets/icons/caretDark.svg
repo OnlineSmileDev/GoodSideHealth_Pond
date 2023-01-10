@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Caret</title>
+    <defs>
+        <path d="M24.536274,3.62653491 C24.2276228,3.20951975 23.8616613,3 23.4372659,3 L1.56273411,3 C1.13983698,3 0.772377214,3.20951975 0.46372599,3.62653491 C0.155074766,4.04557441 0,4.54002078 0,5.11139227 C0,5.68276376 0.155074766,6.17670405 0.46372599,6.59574355 L11.4013665,21.3734651 C11.711516,21.7904802 12.0771029,22 12.5,22 C12.9228971,22 13.2899823,21.7904802 13.5990081,21.3734651 L24.536274,6.59574355 C24.8449252,6.17670405 25,5.68276376 25,5.11139227 C25,4.54002078 24.8449252,4.04557441 24.536274,3.62653491 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Icon"></g>
+        <g id="Group" mask="url(#mask-2)" fill="#434345">
+            <g id="Color">
+                <rect x="0" y="0" width="25" height="25"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

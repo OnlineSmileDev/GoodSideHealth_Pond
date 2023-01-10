@@ -1,0 +1,29 @@
+query getOrderHeightAndWeight($visit_id: Int!, $code: String!) {
+  orders(
+    where: {
+      visit_id: { _eq: $visit_id }
+      _and: { order_type: { category: { _eq: $code } } }
+    }
+  ) {
+    id
+    visit {
+      first_name
+      last_name
+      date_of_birth
+      birth_sex
+    }
+    order_height_and_weight {
+      height_ft
+      height_in
+      weight_lbs
+      pulse_bpm
+      pressure_systolic
+      pressure_diastolic
+      bmi
+      bmi_percentile
+      date_of_birth
+      birth_sex
+    }
+    status
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path fill="white" d="M20.6846663,6.42868178 C20.4747835,6.14335562 20.2259297,6 19.9373408,6 L5.0626592,6 C4.77508915,6 4.52521651,6.14335562 4.31533367,6.42868178 C4.10545084,6.71539302 4,7.05369843 4,7.44463682 C4,7.83557521 4.10545084,8.17353435 4.31533367,8.46024559 L11.7529292,18.5713182 C11.9638309,18.8566444 12.21243,19 12.5,19 C12.78757,19 13.037188,18.8566444 13.2473255,18.5713182 L20.6846663,8.46024559 C20.8945492,8.17353435 21,7.83557521 21,7.44463682 C21,7.05369843 20.8945492,6.71539302 20.6846663,6.42868178 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Icon" fill="white" xlink:href="#path-1"></use>
+        <g id="Colors-/-Dark-Blue" mask="url(#mask-2)" fill="white" fill-rule="nonzero">
+            <rect id="Black" x="0" y="0" width="25" height="25"></rect>
+        </g>
+    </g>
+</svg>

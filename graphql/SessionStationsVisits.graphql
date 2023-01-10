@@ -1,0 +1,29 @@
+query SessionStationsVisits($session_id: Int!) {
+  sessions(where: { id: { _eq: $session_id } }) {
+    stations(order_by: { position: asc }) {
+      id
+      position
+      title
+      code
+      order_types(order_by: { position: asc }) {
+        id
+        position
+        form_type_id
+      }
+      visit_action_name
+      station_visits {
+        visit {
+          last_name
+          first_name
+          date_of_birth
+          id
+          student_id
+          patient_id
+          has_uil_printed
+        }
+      }
+    }
+    id
+    name
+  }
+}

@@ -1,0 +1,25 @@
+mutation completeOrderVision(
+  $orderId: Int!
+  $vision_left: Int
+  $vision_right: Int
+  $is_vision_corrected: Boolean
+  $orderParams: orders_set_input = { status: "Complete" }
+) {
+  update_orders(where: { id: { _eq: $orderId } }, _set: $orderParams) {
+    returning {
+      id
+    }
+  }
+  update_order_vision(
+    where: { order_id: { _eq: $orderId } }
+    _set: {
+      vision_left: $vision_left
+      vision_right: $vision_right
+      is_vision_corrected: $is_vision_corrected
+    }
+  ) {
+    returning {
+      id
+    }
+  }
+}

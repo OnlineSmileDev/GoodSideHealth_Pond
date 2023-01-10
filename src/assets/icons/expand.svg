@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>16D8DCED-FFAD-4F56-BA4E-5CCFDD48A822</title>
+    <defs>
+        <circle id="path-1" cx="12.5" cy="12.5" r="12.5"></circle>
+        <polygon id="path-3" points="3.36325 4.54928571 2.2 5.65714286 5.5 8.8 8.8 5.65714286 7.63675 4.54928571 6.325 5.79071429 6.325 0.809285714 7.63675 2.05071429 8.8 0.942857143 5.5 -2.2 2.2 0.942857143 3.36325 2.05071429 4.675 0.809285714 4.675 5.79071429"></polygon>
+    </defs>
+    <g id="Whole-Child-Physical" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web-/-Provider-/-Kanban-Item-/-In-Progress-/-2" transform="translate(-350.000000, -185.000000)">
+            <g id="Swimlanes" transform="translate(0.000000, 170.000000)">
+                <g id="Swim-Lane" transform="translate(60.000000, 0.000000)">
+                    <g id="Header" transform="translate(15.000000, 15.000000)">
+                        <g id="Icons" transform="translate(240.000000, 0.000000)">
+                            <g id="Icon" transform="translate(35.000000, 0.000000)">
+                                <g id="Background">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Mask"></g>
+                                    <g id="Color" mask="url(#mask-2)" fill="#FFFFFF">
+                                        <rect x="0" y="0" width="25" height="25"></rect>
+                                    </g>
+                                </g>
+                                <g transform="translate(7.000000, 9.200000)">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <g id="Rectangle-2" fill-rule="nonzero" transform="translate(5.500000, 3.300000) rotate(90.000000) translate(-5.500000, -3.300000) "></g>
+                                    <g id="Color" mask="url(#mask-4)" fill="#434345">
+                                        <g transform="translate(0.000000, -2.200000)">
+                                            <rect x="0" y="0" width="11" height="11"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

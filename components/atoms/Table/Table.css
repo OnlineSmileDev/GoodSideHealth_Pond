@@ -1,0 +1,128 @@
+.table thead th {
+  border: 0px !important;
+  padding: 15px 20px;
+  outline: none;
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.table:not(.rounded-0) thead th:first-child {
+  border-radius: 4px 0px 0px 0px;
+}
+.table:not(.rounded-0) thead th:last-child {
+  border-radius: 0px 4px 0px 0px;
+}
+.table.right-align thead th:last-child {
+  text-align: right;
+}
+.table.table-td-y-0 tbody td {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+.table tbody tr td {
+  padding: 15px 20px;
+  vertical-align: middle;
+  border: 0px;
+  color: #4c4c4c;
+  font-weight: 600;
+}
+table.td-12 td {
+  font-size: 12px !important;
+}
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #fbfbfe;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
+}
+.align-item-right {
+  text-align: right;
+}
+tr th:nth-last-child(2) {
+  width: 190px !important;
+}
+tr th:nth-last-child(1) {
+  width: 190px !important;
+}
+.order-arrow {
+  height: 20px;
+  width: 10px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.order-arrow span {
+  height: 10px;
+  display: block;
+}
+.order-arrow span img {
+  display: block;
+}
+.upArrow {
+  transform: rotateZ(-180deg);
+}
+.scrollbar .table-responsive {
+  overflow-y: auto;
+  max-height: 355px;
+  padding-right: 10px;
+  scrollbar-color: #000000 #f1f1f1;
+  scrollbar-width: thin;
+}
+.scrollbar thead.bg-light th {
+  background-color: #f6f6fc;
+}
+.scrollbar .table-responsive::-webkit-scrollbar {
+  width: 7px;
+}
+.scrollbar .table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.scrollbar .table-responsive::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+.scrollbar .table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scrollbar table thead th {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+.scroll-thead-primary table thead th {
+  background-color: #428ec2;
+}
+
+.scrollbar table tbody::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.scrollbar table tbody::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar table tbody::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #222;
+}
+.td-p-10 td,
+.td-p-10 th {
+  padding: 10px !important;
+}
+
+.table-height {
+  height: 500px;
+}
+
+.table tr td.react-bs-table-no-data {
+  padding: 0px !important;
+}
+.scroll-height .table-responsive {
+  max-height: 440px;
+}

@@ -1,0 +1,83 @@
+query getOrderByPk($order_id: Int!) {
+  orders_by_pk(id: $order_id) {
+    id
+    status
+    is_flagged
+    visit {
+      first_name
+      last_name
+    }
+    order_height_and_weight {
+      height_ft
+      weight_lbs
+      pulse_bpm
+      pressure_systolic
+      pressure_diastolic
+      id
+      height_in
+      bmi
+      bmi_percentile
+      date_of_birth
+      birth_sex
+      updated_at
+    }
+    order_musculoskeletal {
+      back
+      back_notes
+      elbow_or_forearm
+      elbow_or_forearm_notes
+      foot
+      foot_notes
+      hip_or_thigh
+      hip_or_thigh_notes
+      id
+      knee
+      knee_notes
+      leg_or_ankle
+      leg_or_ankle_notes
+      neck
+      neck_notes
+      shoulder_or_arm
+      shoulder_or_arm_notes
+      wrist_or_hand
+      wrist_or_hand_notes
+      signature
+      updated_at
+    }
+    order_medical_assessment {
+      abdomen
+      abdomen_notes
+      appearance
+      appearance_notes
+      eyes_ears_nose_throat
+      eyes_ears_nose_throat_notes
+      heart_auscultation_standing_position
+      heart_auscultation_standing_position_notes
+      heart_auscultation_supine_position
+      heart_auscultation_supine_position_notes
+      heart_lower_pulses
+      heart_lower_pulses_notes
+      id
+      is_pupils_equal
+      lungs
+      lungs_notes
+      lymph_nodes
+      lymph_nodes_notes
+      marfans_stigmata
+      marfans_stigmata_notes
+      pulses
+      pulses_notes
+      skin
+      skin_notes
+      signature
+      updated_at
+    }
+    order_vision {
+      vision_right
+      vision_left
+      id
+      is_vision_corrected
+      updated_at
+    }
+  }
+}

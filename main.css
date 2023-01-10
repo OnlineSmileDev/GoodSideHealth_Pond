@@ -1,0 +1,16 @@
+@import 'src/index.css';
+@import 'src/app.css';
+@import 'src/features/DischargeNoteModal/Pharmacy.css';
+@import 'src/features/DischargeNoteModal/DischargeNoteModal.css';
+@import 'components/atoms//DatePicker/DatePicker.css';
+@import 'src/features/ScreeningDataDashboard/tablePagination.css';
+@import 'src/features/Users/users.css';
+@import 'src/features/VisitItem/visitItem.css';
+@import 'src/widgets/CustomLocationCard/CustomLocationCard.css';
+@import 'components/molecules/CustomSelectInput/CustomSelectInput.css';
+@import 'src/widgets/NavBar/NavBar.css';
+@import 'components/atoms/Table/Table.css';
+@import 'components/molecules/Stepper/Stepper.css';
+@import 'src/widgets/modal/Modal.css';
+@import 'src/widgets/busyIndicator/busyIndicator.css';
+@import 'components/molecules/Pagination/Pagination.css';

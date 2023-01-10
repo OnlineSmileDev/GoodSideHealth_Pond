@@ -1,0 +1,34 @@
+query getOrderForm(
+  $visit_id: Int
+  $code: String
+  $patient_id: String = ""
+  $form_type: String = ""
+  $language: String = "en"
+) {
+  orders(
+    where: {
+      visit_id: { _eq: $visit_id }
+      _and: { order_type: { category: { _eq: $code } } }
+    }
+  ) {
+    id
+    status
+    order_type {
+      form_type_id
+    }
+  }
+  forms(
+    where: { patient_id: { _eq: $patient_id }, type: { _eq: $form_type } }
+  ) {
+    data
+  }
+  form_types(where: { id: { _eq: $form_type } }) {
+    schema
+    ui_schema
+  }
+  form_localizations(
+    where: { type: { _eq: $form_type }, locale: { _eq: $language } }
+  ) {
+    dictionary
+  }
+}

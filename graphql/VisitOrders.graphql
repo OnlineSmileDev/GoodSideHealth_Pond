@@ -1,0 +1,7 @@
+query VisitOrders($visit_id: Int!) {
+  visits(where: { id: { _eq: $visit_id } }) {
+    orders {
+      status
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Arrow / Right</title>
+    <defs>
+        <path d="M19.4611029,13.7375989 L8.14602657,24.4873163 C7.42470643,25.1708946 6.25746326,25.1708946 5.5383463,24.4873163 C4.82055123,23.8037381 4.82055123,22.6948596 5.5383463,22.0116999 L15.5504638,12.4997907 L5.54010884,2.98955586 C4.82055123,2.30597765 4.82055123,1.19751769 5.54010884,0.51393947 C6.2592258,-0.171313157 7.42646897,-0.171313157 8.14602657,0.51393947 L19.4611029,11.2636569 C19.821102,11.6052367 20,12.0518858 20,12.4997907 C20,12.9476956 19.821102,13.3976935 19.4611029,13.7375989 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Arrow-/-Right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Arrow"></g>
+        <g id="Group" mask="url(#mask-2)" fill="#428EC2">
+            <g id="Color">
+                <rect x="0" y="0" width="25" height="25"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

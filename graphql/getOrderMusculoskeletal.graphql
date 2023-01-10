@@ -1,0 +1,36 @@
+query getOrderMusculoskeletal($visit_id: Int!, $code: String!) {
+  orders(
+    where: {
+      visit_id: { _eq: $visit_id }
+      _and: { order_type: { category: { _eq: $code } } }
+    }
+  ) {
+    id
+    visit {
+      first_name
+      last_name
+    }
+    order_musculoskeletal {
+      neck
+      neck_notes
+      back
+      back_notes
+      shoulder_or_arm
+      shoulder_or_arm_notes
+      elbow_or_forearm
+      elbow_or_forearm_notes
+      wrist_or_hand
+      wrist_or_hand_notes
+      hip_or_thigh
+      hip_or_thigh_notes
+      knee
+      knee_notes
+      leg_or_ankle
+      leg_or_ankle_notes
+      foot
+      foot_notes
+      signature
+    }
+    status
+  }
+}

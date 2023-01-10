@@ -1,0 +1,5 @@
+mutation insertClearanceNote($input: clearance_notes_insert_input!) {
+  insert_clearance_notes_one(object: $input) {
+    id
+  }
+}

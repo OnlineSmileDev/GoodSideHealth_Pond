@@ -1,0 +1,25 @@
+query getPatientFormsData($patientId: String!, $on_registration: Boolean!) {
+  forms(
+    where: {
+      _and: {
+        patient_id: { _eq: $patientId }
+        form_type: { on_registration: { _eq: $on_registration } }
+      }
+    }
+  ) {
+    data
+    form_type {
+      id
+      schema
+      ui_schema
+      form_localizations {
+        locale
+        dictionary
+      }
+    }
+  }
+  form_images(patient_id: $patientId) {
+    type
+    url
+  }
+}

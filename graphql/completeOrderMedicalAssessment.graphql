@@ -1,0 +1,67 @@
+mutation completeOrderMedicalAssessment(
+  $orderId: Int!
+  $abdomen: String
+  $abdomen_notes: String
+  $appearance: String
+  $appearance_notes: String
+  $eyes_ears_nose_throat: String
+  $eyes_ears_nose_throat_notes: String
+  $heart_auscultation_standing_position: String
+  $heart_auscultation_standing_position_notes: String
+  $heart_auscultation_supine_position: String
+  $heart_auscultation_supine_position_notes: String
+  $heart_lower_pulses: String
+  $heart_lower_pulses_notes: String
+  $lungs: String
+  $lungs_notes: String
+  $lymph_nodes: String
+  $lymph_nodes_notes: String
+  $marfans_stigmata: String
+  $marfans_stigmata_notes: String
+  $pulses: String
+  $pulses_notes: String
+  $is_pupils_equal: Boolean
+  $skin: String
+  $skin_notes: String
+  $signature: String
+  $orderParams: orders_set_input = { status: "Complete" }
+) {
+  update_orders(where: { id: { _eq: $orderId } }, _set: $orderParams) {
+    returning {
+      id
+    }
+  }
+  update_order_medical_assessment(
+    where: { order_id: { _eq: $orderId } }
+    _set: {
+      abdomen: $abdomen
+      abdomen_notes: $abdomen_notes
+      appearance: $appearance
+      appearance_notes: $appearance_notes
+      eyes_ears_nose_throat: $eyes_ears_nose_throat
+      eyes_ears_nose_throat_notes: $eyes_ears_nose_throat_notes
+      heart_auscultation_standing_position: $heart_auscultation_standing_position
+      heart_auscultation_standing_position_notes: $heart_auscultation_standing_position_notes
+      heart_auscultation_supine_position: $heart_auscultation_supine_position
+      heart_auscultation_supine_position_notes: $heart_auscultation_supine_position_notes
+      heart_lower_pulses: $heart_lower_pulses
+      heart_lower_pulses_notes: $heart_lower_pulses_notes
+      lungs: $lungs
+      lungs_notes: $lungs_notes
+      lymph_nodes: $lymph_nodes
+      lymph_nodes_notes: $lymph_nodes_notes
+      marfans_stigmata: $marfans_stigmata
+      marfans_stigmata_notes: $marfans_stigmata_notes
+      pulses: $pulses
+      pulses_notes: $pulses_notes
+      is_pupils_equal: $is_pupils_equal
+      skin: $skin
+      skin_notes: $skin_notes
+      signature: $signature
+    }
+  ) {
+    returning {
+      id
+    }
+  }
+}

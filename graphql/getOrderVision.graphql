@@ -1,0 +1,20 @@
+query getOrderVision($visit_id: Int!, $code: String!) {
+  orders(
+    where: {
+      visit_id: { _eq: $visit_id }
+      _and: { order_type: { category: { _eq: $code } } }
+    }
+  ) {
+    id
+    visit {
+      first_name
+      last_name
+    }
+    order_vision {
+      vision_left
+      vision_right
+      is_vision_corrected
+    }
+    status
+  }
+}

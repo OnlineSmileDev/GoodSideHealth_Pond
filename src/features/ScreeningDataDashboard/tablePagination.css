@@ -1,0 +1,64 @@
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  align-items: center;
+}
+.page-link {
+  padding: 0rem 0.75rem;
+  margin-left: 0px;
+  background-color: transparent;
+  border: none;
+  color: #4c4c4c;
+  opacity: 0.5;
+  font-size: 14px;
+  min-width: auto;
+  line-height: initial;
+}
+.page-link:hover {
+  opacity: 1;
+  background-color: transparent;
+  color: #4c4c4c;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  color: #4c4c4c;
+  background-color: transparent;
+  opacity: 1;
+}
+.page-item {
+  margin-right: 10px;
+}
+.pagination .page-link {
+  border: 0px;
+  color: #4c4c4c;
+  font-weight: 600;
+  opacity: 0.5;
+}
+.pagination li[title='previous page'] a {
+  color: #212529;
+  background-color: #f6f6fc;
+  border-color: #f6f6fc;
+  min-width: 133px !important;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+}
+.pagination li[title='next page'] a {
+  color: #212529;
+  background-color: #f6f6fc;
+  border-color: #f6f6fc;
+  min-width: 133px !important;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+}
+.pagination li[title='first page'] a {
+  display: none;
+}
+.pagination li[title='last page'] a {
+  display: none;
+}

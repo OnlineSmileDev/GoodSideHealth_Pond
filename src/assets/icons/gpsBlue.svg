@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <defs>
+        <path d="M10,0 C6.25050746,0 3.2,3.11865234 3.2,6.95190431 C3.2,11.7698975 10.0066866,20 10.0066866,20 C10.0066866,20 16.8,11.532959 16.8,6.95190431 C16.8,3.11865234 13.7496119,0 10,0 Z M12.0517015,8.98742675 C11.4859702,9.56567381 10.7430448,9.85485841 10,9.85485841 C9.25707463,9.85485841 8.51391045,9.56567381 7.94841791,8.98742675 C6.81707462,7.83093263 6.81707462,5.94909669 7.94841791,4.79248047 C8.49623881,4.23217775 9.22495523,3.923584 10,3.923584 C10.7750448,3.923584 11.5036418,4.23229981 12.0517015,4.79248047 C13.1830448,5.94909669 13.1830448,7.83093263 12.0517015,8.98742675 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="General-/-Pharmacy-Map-/-Default" transform="translate(-43.000000, -120.000000)">
+            <g id="Form" transform="translate(20.000000, 20.000000)">
+                <g id="Field" transform="translate(0.000000, 90.000000)">
+                    <g id="Icon" transform="translate(20.000000, 10.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Shape" fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-2)" fill="#428EC2">
+                            <g id="Color">
+                                <rect x="0" y="0" width="20" height="20"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

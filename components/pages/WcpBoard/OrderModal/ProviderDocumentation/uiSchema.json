@@ -1,0 +1,208 @@
+[
+  {
+    "bmi_screening": {
+      "ui:order": [
+        "bmi_status",
+        "bmi_less_85_section",
+        "bmi_more_85_section",
+        "bmi_icd_10_code"
+      ],
+      "bmi_status": {
+        "ui:widget": "radio",
+        "ui:vertical": true
+      },
+      "bmi_less_85_section": {
+        "is_bmi_no_further_actions": {
+          "ui:widget": "checkbox"
+        }
+      },
+      "bmi_more_85_section": {
+        "ui:order": [
+          "is_weight_management_referral_discussed",
+          "is_weight_management_referral_approved",
+          "is_pcp_obesity_referral",
+          "is_nutrition_exercise_discussed",
+          "is_bmi_positive_counseling",
+          "bmi_discussions_section",
+          "is_patient_goals",
+          "bmi_patient_goals_section"
+        ],
+        "is_weight_management_referral_discussed": {
+          "ui:widget": "checkbox"
+        },
+        "is_weight_management_referral_approved": {
+          "ui:widget": "checkbox"
+        },
+        "is_pcp_obesity_referral": {
+          "ui:widget": "checkbox"
+        },
+        "is_nutrition_exercise_discussed": {
+          "ui:widget": "checkbox"
+        },
+        "is_bmi_positive_counseling": {
+          "ui:widget": "checkbox"
+        },
+        "bmi_discussions_section": {
+          "is_weight_consequences_discussion": {
+            "ui:widget": "checkbox"
+          },
+          "is_weight_discussion": {
+            "ui:widget": "checkbox"
+          }
+        },
+        "is_patient_goals": {
+          "ui:widget": "checkbox"
+        },
+        "bmi_patient_goals_section": {
+          "do_begin_physical_activity": {
+            "ui:widget": "checkbox"
+          },
+          "do_begin_diet_program": {
+            "ui:widget": "checkbox"
+          }
+        }
+      },
+      "bmi_icd_10_code": {
+        "ui:widget": "radio",
+        "ui:vertical": true
+      }
+    },
+    "tobacco_screening": {
+      "ui:order": [
+        "tobacco_status",
+        "negative_tobacco_screening_section",
+        "positive_tobacco_screening_section"
+      ],
+      "tobacco_status": {
+        "ui:widget": "radio",
+        "ui:vertical": true
+      },
+      "negative_tobacco_screening_section": {
+        "ui:order": [
+          "is_tobacco_no_further_actions",
+          "is_tobacco_negative_counseling"
+        ],
+        "is_tobacco_no_further_actions": {
+          "ui:widget": "checkbox"
+        },
+        "is_tobacco_negative_counseling": {
+          "ui:widget": "checkbox"
+        }
+      },
+      "positive_tobacco_screening_section": {
+        "ui:order": [
+          "is_tobacco_positive_counseling",
+          "is_pcp_tobacco_referral",
+          "is_tobacco_cessation_discussed"
+        ],
+        "is_tobacco_positive_counseling": {
+          "ui:widget": "checkbox"
+        },
+        "is_pcp_tobacco_referral": {
+          "ui:widget": "checkbox"
+        },
+        "is_tobacco_cessation_discussed": {
+          "ui:widget": "checkbox"
+        }
+      }
+    },
+    "depression_screening": {
+      "ui:order": [
+        "is_phq2",
+        "phq2_section",
+        "evaluation_management_code",
+        "is_encounter_for_other_screening",
+        "is_child_depression"
+      ],
+      "is_phq2": {
+        "ui:widget": "checkbox"
+      },
+      "phq2_section": {
+        "ui:order": [
+          "phq2_status",
+          "phq2_negative_section",
+          "phq2_positive_section"
+        ],
+        "phq2_status": {
+          "ui:widget": "radio",
+          "ui:vertical": true
+        },
+        "phq2_negative_section": {
+          "is_phq_no_further_actions": {
+            "ui:widget": "checkbox"
+          },
+          "is_phq_negative_parents_notified": {
+            "ui:widget": "checkbox"
+          }
+        },
+        "phq2_positive_section": {
+          "ui:order": ["is_phq9_administered", "phq9_section"],
+          "is_phq9_administered": {
+            "ui:widget": "checkbox"
+          },
+          "phq9_section": {
+            "ui:order": ["is_phq9", "phq9_score", "phq9_interventions_section"],
+            "is_phq9": {
+              "ui:widget": "checkbox"
+            },
+            "phq9_score": {
+              "ui:widget": "updown"
+            },
+            "phq9_interventions_section": {
+              "ui:order": [
+                "is_phq_intervention_none_needed",
+                "is_phq_intervention_pcp_referral",
+                "is_phq_intervention_parent_notified",
+                "is_phq_intervention_instructions_provided",
+                "is_phq_intervention_school_notified",
+                "is_phq_intervention_attached_note",
+                "is_phq_intervention_columbia_ssrs_administered",
+                "columbia_ssrs_section"
+              ],
+              "is_phq_intervention_none_needed": {
+                "ui:widget": "checkbox"
+              },
+              "is_phq_intervention_pcp_referral": {
+                "ui:widget": "checkbox"
+              },
+              "is_phq_intervention_parent_notified": {
+                "ui:widget": "checkbox"
+              },
+              "is_phq_intervention_instructions_provided": {
+                "ui:widget": "checkbox"
+              },
+              "is_phq_intervention_school_notified": {
+                "ui:widget": "checkbox"
+              },
+              "is_phq_intervention_attached_note": {
+                "ui:widget": "checkbox"
+              },
+              "is_phq_intervention_columbia_ssrs_administered": {
+                "ui:widget": "checkbox"
+              },
+              "columbia_ssrs_section": {
+                "ui:order": ["is_columbia_ssrs", "is_columbia_notes_provided"],
+                "is_columbia_ssrs": {
+                  "ui:widget": "checkbox"
+                },
+                "is_columbia_notes_provided": {
+                  "ui:widget": "checkbox"
+                }
+              }
+            }
+          }
+        }
+      },
+      "evaluation_management_code": {
+        "ui:widget": "radio",
+        "ui:vertical": true
+      },
+      "is_encounter_for_other_screening": {
+        "ui:widget": "checkbox"
+      },
+      "is_child_depression": {
+        "ui:widget": "checkbox"
+      }
+    }
+  }
+]

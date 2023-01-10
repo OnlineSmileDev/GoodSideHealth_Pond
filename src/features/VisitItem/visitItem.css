@@ -1,0 +1,79 @@
+.list-group-item span + span:last-child::before {
+  content: ' and ';
+}
+
+.list-group-item span:nth-of-type(n + 2):not(:last-child)::before {
+  content: ', ';
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.accordion-btn-left {
+  text-align: left;
+}
+
+.line-break-hr {
+  height: 5px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  background-color: #f6f6fc;
+  border: 0 !important;
+}
+.green-dot {
+  background-color: #8dc63f;
+  padding: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.orange-dot {
+  background-color: #f79413;
+  padding: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.resend-icon {
+  padding: 5px;
+  background-color: #428ec2;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.delete-icon {
+  padding: 5px;
+  background-color: #c72127;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.guest-name {
+  margin-bottom: 0px !important;
+  min-width: 30% !important;
+}
+
+.guests {
+  border-top: 1px solid #434345;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.guests:first-child {
+  border-top: 0px;
+}
+
+.discharge-summary {
+  white-space: pre-line;
+}

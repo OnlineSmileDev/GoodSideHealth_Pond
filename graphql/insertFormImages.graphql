@@ -1,0 +1,5 @@
+mutation insertFormImages($patientId: String!, $formId: String!) {
+  insert_form_images_one(patient_id: $patientId, form_id: $formId) {
+    url
+  }
+}

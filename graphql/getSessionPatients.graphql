@@ -1,0 +1,7 @@
+query getSessionPatients($session_id: Int!) {
+  sessions_by_pk(id: $session_id) {
+    visits {
+      patient_id
+    }
+  }
+}

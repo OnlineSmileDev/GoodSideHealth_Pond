@@ -1,0 +1,8 @@
+[
+  {
+    "tobaccoUser": {
+      "ui:title": "Do you use tobacco products (cigarettes, e-cigarettes, chewing tobacco, etc)?",
+      "ui:enumNames": ["Yes", "No"]
+    }
+  }
+]

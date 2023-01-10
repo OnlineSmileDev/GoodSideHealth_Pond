@@ -1,0 +1,29 @@
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.react-datepicker-popper {
+  z-index: 100;
+}
+.react-datepicker__day--selected {
+  background-color: #216ba5 !important;
+}
+.react-datepicker__day--highlighted {
+  background-color: #2b8dcf;
+}
+.react-datepicker__day--highlighted:hover {
+  background-color: #2a76a8;
+}
+.react-datepicker__month-container {
+  float: none;
+}
+.react-datepicker__year-select,
+.react-datepicker__month-select {
+  background: none;
+}
+.calender-input-black {
+  background-image: url(../../../public/blackCalendar.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  padding-right: 30px;
+}

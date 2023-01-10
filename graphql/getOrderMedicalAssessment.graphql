@@ -1,0 +1,41 @@
+query getOrderMedicalAssessment($visit_id: Int!, $code: String!) {
+  orders(
+    where: {
+      visit_id: { _eq: $visit_id }
+      _and: { order_type: { category: { _eq: $code } } }
+    }
+  ) {
+    id
+    visit {
+      first_name
+      last_name
+    }
+    order_medical_assessment {
+      abdomen
+      abdomen_notes
+      appearance
+      appearance_notes
+      eyes_ears_nose_throat
+      eyes_ears_nose_throat_notes
+      heart_auscultation_standing_position
+      heart_auscultation_standing_position_notes
+      heart_auscultation_supine_position
+      heart_auscultation_supine_position_notes
+      heart_lower_pulses
+      heart_lower_pulses_notes
+      lungs
+      lungs_notes
+      lymph_nodes
+      lymph_nodes_notes
+      marfans_stigmata
+      marfans_stigmata_notes
+      pulses
+      pulses_notes
+      is_pupils_equal
+      skin
+      skin_notes
+      signature
+    }
+    status
+  }
+}

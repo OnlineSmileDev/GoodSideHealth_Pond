@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E3004B2E-E0EC-44D2-BF5A-826261B8DEC0</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="690" height="140" rx="4"></rect>
+        <filter x="-0.9%" y="-4.6%" width="102.5%" height="112.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.298039216   0 0 0 0 0.298039216   0 0 0 0 0.298039216  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="0" width="180" height="30" rx="4"></rect>
+        <path d="M5.20824248,3.3335631 C5.55324105,3.3335631 5.83323768,3.6135597 5.83323768,3.9585583 C5.83323768,4.30355686 5.55324105,4.5835535 5.20824248,4.5835535 L2.29154735,4.5835535 C1.71736352,4.5835535 1.24999039,5.05092662 1.24999039,5.62511042 L1.24999039,17.7084527 C1.24999039,18.2824839 1.71736352,18.7500096 2.29154735,18.7500096 L17.7081465,18.7500096 C18.2823303,18.7500096 18.749856,18.2824839 18.749856,17.7084527 L18.749856,10.625072 C18.749856,10.2800734 19.0298526,10.0000768 19.3748512,10.0000768 C19.7198498,10.0000768 19.9998464,10.2800734 19.9998464,10.625072 L19.9998464,17.7084527 C19.9998464,18.9724811 18.9723274,20 17.7081465,20 L2.29154735,20 C1.0273664,20 3.69482223e-14,18.9724811 3.69482223e-14,17.7084527 L3.69482223e-14,5.62511042 C3.69482223e-14,4.36092946 1.0273664,3.3335631 2.29154735,3.3335631 L5.20824248,3.3335631 Z M14.4081535,0.191802542 L19.8248294,5.81675934 C20.0581345,6.0584567 20.0581345,6.44175453 19.8248294,6.6834519 L14.4081535,12.3084087 C14.2314581,12.4925809 13.9589382,12.5493431 13.7248702,12.4550445 C13.4882082,12.3592201 13.3331801,12.1300348 13.3331801,11.8750624 L13.3331801,9.16680075 L12.3431974,9.16680075 C9.721605,9.16680075 7.36566607,10.6233936 6.19410526,12.9675833 C6.0865316,13.1842565 5.86070325,13.3226526 5.62404128,13.3226526 C5.57826527,13.3226526 5.53233664,13.3176173 5.48656066,13.3058681 C5.20412263,13.2401032 4.99996158,12.9984059 4.99996158,12.7084911 L4.99996158,11.4585007 C4.99996158,6.97855463 8.64495312,3.3335631 13.1248992,3.3335631 L13.3331801,3.3335631 L13.3331801,0.625148822 C13.3331801,0.370176406 13.4882082,0.140991174 13.7248702,0.045166715 C13.9606167,-0.0497422435 14.2314581,0.00763036266 14.4081535,0.191802542 Z M14.5831705,2.17512473 L14.5831705,3.9585583 C14.5831705,4.30355686 14.3031738,4.5835535 13.9581753,4.5835535 L13.1248992,4.5835535 C9.62486504,4.5835535 6.72663289,7.21262264 6.30244181,10.6000478 C7.81732276,8.91014987 9.98985247,7.91681035 12.3431974,7.91681035 L13.9581753,7.91681035 C14.3031738,7.91681035 14.5831705,8.19680699 14.5831705,8.54180555 L14.5831705,10.3250865 L18.5072431,6.25010562 L14.5831705,2.17512473 Z" id="path-6"></path>
+    </defs>
+    <g id="Visit-Item" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web-/-Provider-/-Visit-Item-/-Closed-Accordions-Example" transform="translate(-859.000000, -200.000000)">
+            <g id="Color" transform="translate(0.000000, 0.000000)" fill="#F6F6FC">
+                <rect x="0" y="0" width="1440" height="1652"></rect>
+            </g>
+            <g id="Content" transform="translate(375.000000, 105.000000)">
+                <g id="Video-Available" transform="translate(-0.000000, 0.000000)">
+                    <g id="Card">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask" fill="black" fill-opacity="1">
+                            <use filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="White" mask="url(#mask-2)" fill="#FFFFFF">
+                            <rect id="Color" x="0" y="0" width="690" height="140"></rect>
+                        </g>
+                    </g>
+                    <g id="Button" transform="translate(345.000000, 90.000000)">
+                        <g id="Background">
+                            <mask id="mask-5" fill="white">
+                                <use xlink:href="#path-4"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <g id="Color" mask="url(#mask-5)" fill="#F6F6FC">
+                                <rect x="0" y="0" width="180" height="30"></rect>
+                            </g>
+                        </g>
+                        <text id="Title" font-family="Hind-Bold, Hind" font-size="12" font-weight="bold" fill="#4C4C4C">
+                            <tspan x="20" y="13">Share Video Link</tspan>
+                        </text>
+                        <g id="Icon" transform="translate(140.000000, 5.000000)">
+                            <mask id="mask-7" fill="white">
+                                <use xlink:href="#path-6"></use>
+                            </mask>
+                            <g id="Path-2" fill-rule="nonzero"></g>
+                            <g id="Color" mask="url(#mask-7)" fill="#434345">
+                                <rect x="0" y="0" width="20" height="20"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

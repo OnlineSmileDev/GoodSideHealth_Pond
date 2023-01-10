@@ -1,0 +1,42 @@
+subscription VisitsSubscription(
+  $state: String_comparison_exp = {}
+  $language: String_comparison_exp = {}
+  $created_at: timestamptz_comparison_exp = {}
+  $status: String_comparison_exp = {}
+  $visit_metadata: jsonb_comparison_exp = {}
+  $name_search: [visits_bool_exp!] = {}
+) {
+  visits(
+    where: {
+      language: $language
+      organization: { state: $state }
+      created_at: $created_at
+      status: $status
+      visit_metadata: $visit_metadata
+      _or: $name_search
+      session_id: { _is_null: false }
+      location: { id: { _is_null: false } }
+    }
+    order_by: { updated_at: desc }
+  ) {
+    id
+    firstName: first_name
+    lastName: last_name
+    dateOfBirth: date_of_birth
+    location {
+      id
+      name
+    }
+    organization {
+      id
+      name
+      state
+    }
+    language
+    createdAt: created_at
+    visitReason: visit_reason
+    patientId: patient_id
+    status
+    placeOfServiceId: place_of_service_id
+  }
+}

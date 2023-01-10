@@ -1,0 +1,49 @@
+[
+  {
+    "PH2": {
+      "ui:order": ["interest", "depression", "PH8"],
+      "interest": {
+        "ui:widget": "radio"
+      },
+      "depression": {
+        "ui:widget": "radio"
+      },
+      "PH8": {
+        "ui:order": [
+          "sleep",
+          "energy",
+          "appetite",
+          "self",
+          "concentration",
+          "slow",
+          "suicide",
+          "difficulty"
+        ],
+        "sleep": {
+          "ui:widget": "radio"
+        },
+        "energy": {
+          "ui:widget": "radio"
+        },
+        "appetite": {
+          "ui:widget": "radio"
+        },
+        "self": {
+          "ui:widget": "radio"
+        },
+        "concentration": {
+          "ui:widget": "radio"
+        },
+        "slow": {
+          "ui:widget": "radio"
+        },
+        "suicide": {
+          "ui:widget": "radio"
+        },
+        "difficulty": {
+          "ui:widget": "radio"
+        }
+      }
+    }
+  }
+]

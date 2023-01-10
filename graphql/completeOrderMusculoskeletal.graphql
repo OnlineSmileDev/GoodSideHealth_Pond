@@ -1,0 +1,57 @@
+mutation completeOrderMusculoskeletal(
+  $orderId: Int!
+  $neck: String
+  $neck_notes: String
+  $back: String
+  $back_notes: String
+  $shoulder_or_arm: String
+  $shoulder_or_arm_notes: String
+  $elbow_or_forearm: String
+  $elbow_or_forearm_notes: String
+  $wrist_or_hand: String
+  $wrist_or_hand_notes: String
+  $hip_or_thigh: String
+  $hip_or_thigh_notes: String
+  $knee: String
+  $knee_notes: String
+  $leg_or_ankle: String
+  $leg_or_ankle_notes: String
+  $foot: String
+  $foot_notes: String
+  $signature: String
+  $orderParams: orders_set_input = { status: "Complete" }
+) {
+  update_orders(where: { id: { _eq: $orderId } }, _set: $orderParams) {
+    returning {
+      id
+    }
+  }
+  update_order_musculoskeletal(
+    where: { order_id: { _eq: $orderId } }
+    _set: {
+      neck: $neck
+      neck_notes: $neck_notes
+      back: $back
+      back_notes: $back_notes
+      shoulder_or_arm: $shoulder_or_arm
+      shoulder_or_arm_notes: $shoulder_or_arm_notes
+      elbow_or_forearm: $elbow_or_forearm
+      elbow_or_forearm_notes: $elbow_or_forearm_notes
+      wrist_or_hand: $wrist_or_hand
+      wrist_or_hand_notes: $wrist_or_hand_notes
+      hip_or_thigh: $hip_or_thigh
+      hip_or_thigh_notes: $hip_or_thigh_notes
+      knee: $knee
+      knee_notes: $knee_notes
+      leg_or_ankle: $leg_or_ankle
+      leg_or_ankle_notes: $leg_or_ankle_notes
+      foot: $foot
+      foot_notes: $foot_notes
+      signature: $signature
+    }
+  ) {
+    returning {
+      id
+    }
+  }
+}

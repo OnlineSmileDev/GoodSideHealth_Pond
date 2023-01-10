@@ -1,0 +1,18 @@
+mutation updateVisitStation(
+  $visitId: Int!
+  $oldStationId: Int!
+  $newStationId: Int!
+) {
+  update_station_visits(
+    _set: { station_id: $newStationId }
+    where: {
+      visit_id: { _eq: $visitId }
+      _and: { station_id: { _eq: $oldStationId } }
+    }
+  ) {
+    returning {
+      station_id
+      visit_id
+    }
+  }
+}

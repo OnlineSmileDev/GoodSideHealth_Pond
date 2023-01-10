@@ -1,0 +1,20 @@
+mutation insertOrderForm(
+  $orderId: Int
+  $patient_id: String
+  $type: String
+  $data: jsonb = []
+  $orderParams: orders_set_input = { status: "Complete" }
+) {
+  update_orders(where: { id: { _eq: $orderId } }, _set: $orderParams) {
+    returning {
+      id
+    }
+  }
+  insert_forms_one(
+    object: { patient_id: $patient_id, type: $type, data: $data }
+    on_conflict: { constraint: forms_pkey, update_columns: data }
+  ) {
+    patient_id
+    type
+  }
+}

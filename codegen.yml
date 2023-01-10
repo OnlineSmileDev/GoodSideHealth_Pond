@@ -1,0 +1,16 @@
+overwrite: true
+schema:
+  - ${NEXT_PUBLIC_GRAPHQL_API_ENDPOINT}:
+      headers:
+        x-hasura-admin-secret: ${NEXT_PUBLIC_GRAPHQL_ADMIN_SECRET}
+documents: './graphql/**/*.graphql'
+generates:
+  ./graphql/.generated/index.ts:
+    config:
+      fetcher:
+        isReactHook: true
+        func: 'fetch#useFetch'
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-query'

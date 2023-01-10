@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="0 13.8507793 8.56109715 23 25 5.48258847 22.6399266 3 8.56109715 17.9999095 2.32739024 11.3507082"></polygon>
+    </defs>
+    <g id="Icon-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Path" fill-rule="nonzero"></g>
+        <g id="Group" mask="url(#mask-2)" fill="#4c4c4c">
+            <g id="Color">
+                <rect x="0" y="0" width="25" height="25"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

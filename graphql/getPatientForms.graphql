@@ -1,0 +1,13 @@
+query getPatientForms($ids: [String!]!) {
+  forms(
+    where: {
+      _and: {
+        patient_id: { _in: $ids }
+        form_type: { on_registration: { _eq: true } }
+      }
+    }
+  ) {
+    type
+    patient_id
+  }
+}

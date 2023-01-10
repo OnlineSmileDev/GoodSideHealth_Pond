@@ -1,0 +1,39 @@
+mutation completeOrderHeightAndWeight(
+  $orderId: Int!
+  $height_ft: Int
+  $height_in: Float
+  $pressure_diastolic: Int
+  $pressure_systolic: Int
+  $pulse_bpm: Int
+  $weight_lbs: Int
+  $bmi: Float
+  $bmi_percentile: Int
+  $date_of_birth: date
+  $birth_sex: String
+  $orderParams: orders_set_input = { status: "Complete" }
+) {
+  update_orders(where: { id: { _eq: $orderId } }, _set: $orderParams) {
+    returning {
+      id
+    }
+  }
+  update_order_height_and_weight(
+    where: { order_id: { _eq: $orderId } }
+    _set: {
+      height_ft: $height_ft
+      height_in: $height_in
+      pressure_diastolic: $pressure_diastolic
+      pressure_systolic: $pressure_systolic
+      pulse_bpm: $pulse_bpm
+      weight_lbs: $weight_lbs
+      bmi: $bmi
+      bmi_percentile: $bmi_percentile
+      date_of_birth: $date_of_birth
+      birth_sex: $birth_sex
+    }
+  ) {
+    returning {
+      id
+    }
+  }
+}

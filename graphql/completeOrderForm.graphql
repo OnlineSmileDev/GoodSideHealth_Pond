@@ -1,0 +1,10 @@
+mutation completeOrderForm(
+  $orderId: Int!
+  $orderParams: orders_set_input = { status: "Complete" }
+) {
+  update_orders(where: { id: { _eq: $orderId } }, _set: $orderParams) {
+    returning {
+      id
+    }
+  }
+}

@@ -1,0 +1,25 @@
+query getOrderFormResults(
+  $order_id: Int!
+  $patient_id: String!
+  $form_type: String!
+  $language: String = "en"
+) {
+  orders_by_pk(id: $order_id) {
+    id
+    status
+    is_flagged
+  }
+  form: forms_by_pk(patient_id: $patient_id, type: $form_type) {
+    data(path: "$.[0]")
+    updated_at
+  }
+  form_types(where: { id: { _eq: $form_type } }) {
+    schema
+    ui_schema
+  }
+  form_localizations(
+    where: { type: { _eq: $form_type }, locale: { _eq: $language } }
+  ) {
+    dictionary
+  }
+}

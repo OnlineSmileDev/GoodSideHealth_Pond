@@ -1,0 +1,7 @@
+query getPatientFormTypes($patientId: String!) {
+  forms(where: { patient_id: { _eq: $patientId } }) {
+    form_type {
+      id
+    }
+  }
+}

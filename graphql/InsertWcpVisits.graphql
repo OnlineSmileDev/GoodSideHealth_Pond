@@ -1,0 +1,7 @@
+mutation createWcpVisits($input: [visits_insert_input!]!) {
+  insert_visits(objects: $input) {
+    returning {
+      id
+    }
+  }
+}

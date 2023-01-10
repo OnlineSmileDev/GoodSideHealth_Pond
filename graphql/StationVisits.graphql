@@ -1,0 +1,11 @@
+query StationVisits($station_id: Int!) {
+  station_visits(where: { station_id: { _eq: $station_id } }) {
+    visit {
+      last_name
+      first_name
+      date_of_birth
+      id
+      student_id
+    }
+  }
+}

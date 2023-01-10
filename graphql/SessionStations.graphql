@@ -1,0 +1,9 @@
+query SessionStations($session_id: Int!) {
+  sessions_by_pk(id: $session_id) {
+    stations(order_by: { position: asc }) {
+      id
+      title
+      code
+    }
+  }
+}

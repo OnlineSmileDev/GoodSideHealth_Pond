@@ -1,0 +1,519 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "bmi_screening": {
+        "$ref": "#/definitions/bmi_screening"
+      },
+      "tobacco_screening": {
+        "$ref": "#/definitions/tobacco_screening"
+      },
+      "depression_screening": {
+        "$ref": "#/definitions/depression_screening"
+      }
+    },
+    "definitions": {
+      "bmi_screening": {
+        "type": "object",
+        "title": "",
+        "required": ["bmi_status", "bmi_icd_10_code"],
+        "properties": {
+          "bmi_status": {
+            "$ref": "#/definitions/bmi_status"
+          },
+          "bmi_icd_10_code": {
+            "$ref": "#/definitions/bmi_icd_10_code"
+          }
+        },
+        "dependencies": {
+          "bmi_status": {
+            "oneOf": [
+              {
+                "properties": {
+                  "bmi_status": {
+                    "enum": ["less_85"]
+                  },
+                  "bmi_less_85_section": {
+                    "$ref": "#/definitions/bmi_less_85_section"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "bmi_status": {
+                    "enum": ["more_85"]
+                  },
+                  "bmi_more_85_section": {
+                    "$ref": "#/definitions/bmi_more_85_section"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "bmi_status": {
+        "enum": ["less_85", "more_85"],
+        "type": "string"
+      },
+
+      "bmi_less_85_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_bmi_no_further_actions": {
+            "$ref": "#/definitions/Options"
+          }
+        }
+      },
+
+      "bmi_more_85_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_weight_management_referral_discussed": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_pcp_obesity_referral": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_nutrition_exercise_discussed": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_bmi_positive_counseling": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_patient_goals": {
+            "$ref": "#/definitions/Options"
+          }
+        },
+        "dependencies": {
+          "is_weight_management_referral_discussed": {
+            "oneOf": [
+              {
+                "properties": {
+                  "is_weight_management_referral_discussed": {
+                    "enum": [true]
+                  },
+                  "is_weight_management_referral_approved": {
+                    "$ref": "#/definitions/Options"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "is_weight_management_referral_discussed": {
+                    "enum": [false]
+                  }
+                }
+              }
+            ]
+          },
+          "is_bmi_positive_counseling": {
+            "oneOf": [
+              {
+                "properties": {
+                  "is_bmi_positive_counseling": {
+                    "enum": [true]
+                  },
+                  "bmi_discussions_section": {
+                    "$ref": "#/definitions/bmi_discussions_section"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "is_bmi_positive_counseling": {
+                    "enum": [false]
+                  }
+                }
+              }
+            ]
+          },
+          "is_patient_goals": {
+            "oneOf": [
+              {
+                "properties": {
+                  "is_patient_goals": {
+                    "enum": [true]
+                  },
+                  "bmi_patient_goals_section": {
+                    "$ref": "#/definitions/bmi_patient_goals_section"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "is_patient_goals": {
+                    "enum": [false]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "bmi_discussions_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_weight_consequences_discussion": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_weight_discussion": {
+            "$ref": "#/definitions/Options"
+          }
+        }
+      },
+
+      "bmi_patient_goals_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "do_begin_physical_activity": {
+            "$ref": "#/definitions/Options"
+          },
+          "do_begin_diet_program": {
+            "$ref": "#/definitions/Options"
+          }
+        }
+      },
+
+      "bmi_icd_10_code": {
+        "enum": ["less_85", "more_85", "more_95"],
+        "type": "string"
+      },
+
+      "tobacco_screening": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "tobacco_status": {
+            "$ref": "#/definitions/tobacco_status"
+          }
+        },
+        "dependencies": {
+          "tobacco_status": {
+            "oneOf": [
+              {
+                "properties": {
+                  "tobacco_status": {
+                    "enum": ["negative"]
+                  },
+                  "negative_tobacco_screening_section": {
+                    "$ref": "#/definitions/negative_tobacco_screening_section"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "tobacco_status": {
+                    "enum": ["positive"]
+                  },
+                  "positive_tobacco_screening_section": {
+                    "$ref": "#/definitions/positive_tobacco_screening_section"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "tobacco_status": {
+        "enum": ["negative", "positive"],
+        "type": "string"
+      },
+
+      "negative_tobacco_screening_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_tobacco_no_further_actions": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_tobacco_negative_counseling": {
+            "$ref": "#/definitions/Options"
+          }
+        }
+      },
+
+      "positive_tobacco_screening_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_tobacco_positive_counseling": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_pcp_tobacco_referral": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_tobacco_cessation_discussed": {
+            "$ref": "#/definitions/Options"
+          }
+        }
+      },
+
+      "depression_screening": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_phq2": {
+            "$ref": "#/definitions/Options"
+          },
+          "evaluation_management_code": {
+            "$ref": "#/definitions/evaluation_management_code"
+          },
+          "is_encounter_for_other_screening": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_child_depression": {
+            "$ref": "#/definitions/Options"
+          }
+        },
+        "dependencies": {
+          "is_phq2": {
+            "oneOf": [
+              {
+                "properties": {
+                  "is_phq2": {
+                    "enum": [true]
+                  },
+                  "phq2_section": {
+                    "$ref": "#/definitions/phq2_section"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "is_phq2": {
+                    "enum": [false]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "evaluation_management_code": {
+        "enum": ["99201", "99211"],
+        "type": "string"
+      },
+
+      "phq2_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "phq2_status": {
+            "$ref": "#/definitions/phq2_status"
+          }
+        },
+        "dependencies": {
+          "phq2_status": {
+            "oneOf": [
+              {
+                "properties": {
+                  "phq2_status": {
+                    "enum": ["negative"]
+                  },
+                  "phq2_negative_section": {
+                    "$ref": "#/definitions/phq2_negative_section"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "phq2_status": {
+                    "enum": ["positive"]
+                  },
+                  "phq2_positive_section": {
+                    "$ref": "#/definitions/phq2_positive_section"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "phq2_status": {
+        "enum": ["negative", "positive"],
+        "type": "string"
+      },
+
+      "phq2_negative_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_phq_no_further_actions": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_phq_negative_parents_notified": {
+            "$ref": "#/definitions/Options"
+          }
+        }
+      },
+
+      "phq2_positive_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_phq9_administered": {
+            "$ref": "#/definitions/Options"
+          }
+        },
+        "dependencies": {
+          "is_phq9_administered": {
+            "oneOf": [
+              {
+                "properties": {
+                  "is_phq9_administered": {
+                    "enum": [false]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "is_phq9_administered": {
+                    "enum": [true]
+                  },
+                  "phq9_section": {
+                    "$ref": "#/definitions/phq9_section"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "phq9_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_phq9": {
+            "$ref": "#/definitions/Options"
+          }
+        },
+        "dependencies": {
+          "is_phq9": {
+            "oneOf": [
+              {
+                "properties": {
+                  "is_phq9": {
+                    "enum": [false]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "is_phq9": {
+                    "enum": [true]
+                  },
+                  "phq9_score": {
+                    "type": "number"
+                  },
+                  "phq9_interventions_section": {
+                    "$ref": "#/definitions/phq9_interventions_section"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "phq9_interventions_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_phq_intervention_none_needed": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_phq_intervention_pcp_referral": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_phq_intervention_parent_notified": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_phq_intervention_instructions_provided": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_phq_intervention_school_notified": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_phq_intervention_attached_note": {
+            "$ref": "#/definitions/Options"
+          },
+          "is_phq_intervention_columbia_ssrs_administered": {
+            "$ref": "#/definitions/Options"
+          }
+        },
+        "dependencies": {
+          "is_phq_intervention_columbia_ssrs_administered": {
+            "oneOf": [
+              {
+                "properties": {
+                  "is_phq_intervention_columbia_ssrs_administered": {
+                    "enum": [false]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "is_phq_intervention_columbia_ssrs_administered": {
+                    "enum": [true]
+                  },
+                  "columbia_ssrs_section": {
+                    "$ref": "#/definitions/columbia_ssrs_section"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "columbia_ssrs_section": {
+        "type": "object",
+        "title": "",
+        "properties": {
+          "is_columbia_ssrs": {
+            "$ref": "#/definitions/Options"
+          }
+        },
+        "dependencies": {
+          "is_columbia_ssrs": {
+            "oneOf": [
+              {
+                "properties": {
+                  "is_columbia_ssrs": {
+                    "enum": [false]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "is_columbia_ssrs": {
+                    "enum": [true]
+                  },
+                  "is_columbia_notes_provided": {
+                    "$ref": "#/definitions/Options"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      "Options": {
+        "enum": [true, false],
+        "type": "boolean"
+      }
+    }
+  }
+]

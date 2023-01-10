@@ -1,0 +1,28 @@
+.signatureCanvas {
+  border: 1px;
+  background-color: #f6f6fc;
+  width: 100%;
+  min-height: 10px;
+}
+
+.orderScrollbar {
+  max-height: 420px;
+  width: 100%;
+  background: #f5f5f5;
+  overflow-y: scroll;
+  padding-top: 15px;
+}
+
+.orderScrollbar::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.orderScrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+.orderScrollbar::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #222;
+}

@@ -1,0 +1,62 @@
+mutation insertWCPSession {
+  insert_sessions_one(
+    object: {
+      name: "WCP Test"
+      session_type: "wcp"
+      stations: {
+        data: [
+          {
+            title: "Registration"
+            visit_action_name: "Upload Paperwork"
+            code: "registration"
+            position: 1
+          }
+          {
+            title: "Height & Weight"
+            visit_action_name: "Add Results"
+            code: "height_and_weight"
+            position: 2
+          }
+          {
+            title: "Vision"
+            visit_action_name: "Add Results"
+            code: "vision"
+            position: 3
+          }
+          {
+            title: "Musculoskeletal"
+            visit_action_name: "Add Results"
+            code: "musculoskeletal"
+            position: 4
+          }
+          {
+            title: "Medical Assessment"
+            visit_action_name: "Add Results"
+            code: "medical_assessment"
+            position: 5
+          }
+          {
+            title: "Screenings"
+            visit_action_name: "Add Results"
+            code: "screenings"
+            position: 6
+          }
+          {
+            title: "Checkout"
+            visit_action_name: "View Visit"
+            code: "checkout"
+            position: 7
+          }
+          {
+            title: "Complete"
+            visit_action_name: "View Visit"
+            code: "complete"
+            position: 8
+          }
+        ]
+      }
+    }
+  ) {
+    id
+  }
+}

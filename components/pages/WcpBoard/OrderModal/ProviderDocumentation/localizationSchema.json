@@ -1,0 +1,169 @@
+[
+  {
+    "bmi_screening": {
+      "ui:title": "BMI Screening",
+      "bmi_status": {
+        "ui:title": "BMI Status",
+        "ui:enumNames": [
+          "BMI less than 85th percentile (CPT G8418)",
+          "BMI greater than or equal to 85th percentile (CPT G8417)"
+        ]
+      },
+      "bmi_less_85_section": {
+        "is_bmi_no_further_actions": {
+          "ui:title": "No further intervention needed"
+        }
+      },
+      "bmi_more_85_section": {
+        "is_weight_management_referral_discussed": {
+          "ui:title": "Discussed referral to community resources for weight management"
+        },
+        "is_weight_management_referral_approved": {
+          "ui:title": "Approved referral to community resources for weight management"
+        },
+        "is_pcp_obesity_referral": {
+          "ui:title": "Patient referred to PCP for obesity evaluation and counseling"
+        },
+        "is_nutrition_exercise_discussed": {
+          "ui:title": "“5-2-1-Almost None” nutritional/exercise handout provided discussing nutrition and exercise recommendations"
+        },
+        "is_bmi_positive_counseling": {
+          "ui:description": "Counseling discussions",
+          "ui:title": "2 or more minutes spent in face-to-face counseling discussing"
+        },
+        "bmi_discussions_section": {
+          "is_weight_consequences_discussion": {
+            "ui:title": "Discussion: The health consequences of weight (diabetes, hypertension, heart disease)"
+          },
+          "is_weight_discussion": {
+            "ui:title": "Discussion: Weight"
+          }
+        },
+        "is_patient_goals": {
+          "ui:title": "Patient goals"
+        },
+        "bmi_patient_goals_section": {
+          "do_begin_physical_activity": {
+            "ui:title": "Patient Goals: Begin physical activity routine"
+          },
+          "do_begin_diet_program": {
+            "ui:title": "Patient Goals: Begin diet/nutrition program"
+          }
+        }
+      },
+      "bmi_icd_10_code": {
+        "ui:title": "ICD 10 Codes",
+        "ui:enumNames": [
+          "Z68.52 Body mass index pediatric, 5th percentile to <85% for age",
+          "Z68.53 Body mass index pediatric, 5th 85% percentile to less than 95th percentile for age",
+          "Z68.54 Body mass index pediatric, 5th percentile to >95% for age"
+        ]
+      }
+    },
+    "tobacco_screening": {
+      "ui:title": "Tobacco Products Screening",
+      "tobacco_status": {
+        "ui:title": "Tobacco Products Status",
+        "ui:enumNames": [
+          "Negative Screening for tobacco products (CPT G9903)",
+          "Positive Screening for tobacco products (CPT G9902)"
+        ]
+      },
+      "negative_tobacco_screening_section": {
+        "is_tobacco_no_further_actions": {
+          "ui:title": "No further action needed"
+        },
+        "is_tobacco_negative_counseling": {
+          "ui:title": "Spent at least 2 minutes in face-to-face counseling discussing health risks associated with the use of tobacco products (heart disease, lung disease, increased risk of cancer)"
+        }
+      },
+      "positive_tobacco_screening_section": {
+        "is_tobacco_positive_counseling": {
+          "ui:title": "Spent 2 or more minutes in face-to-face counseling discussing health risks associated with the use of tobacco products (heart disease, lung disease, increased risk of cancer)"
+        },
+        "is_pcp_tobacco_referral": {
+          "ui:title": "Patient referred to PCP for tobacco cessation counseling and further evaluation"
+        },
+        "is_tobacco_cessation_discussed": {
+          "ui:title": "Tobacco Cessation from with instructions for how to quit provided"
+        }
+      }
+    },
+    "depression_screening": {
+      "ui:title": "Depression Screening",
+      "is_phq2": {
+        "ui:title": "PHQ-2"
+      },
+      "phq2_section": {
+        "phq2_status": {
+          "ui:title": "PHQ-2 Status",
+          "ui:enumNames": ["Negative (CPT 96127)", "Positive (CPT 96127)"]
+        },
+        "phq2_negative_section": {
+          "is_phq_no_further_actions": {
+            "ui:title": "No further intervention needed"
+          },
+          "is_phq_negative_parents_notified": {
+            "ui:title": "Parent notified of negative screening result"
+          }
+        },
+        "phq2_positive_section": {
+          "is_phq9_administered": {
+            "ui:title": "PHQ-9 administered"
+          },
+          "phq9_section": {
+            "is_phq9": {
+              "ui:title": "PHQ-9 (CPT 96136)"
+            },
+            "phq9_score": {
+              "ui:description": "PHQ-9 Score",
+              "ui:title": "PHQ9 Score"
+            },
+            "phq9_interventions_section": {
+              "is_phq_intervention_none_needed": {
+                "ui:description": "Interventions:",
+                "ui:title": "None needed"
+              },
+              "is_phq_intervention_pcp_referral": {
+                "ui:title": "Referral to PCP or appropriate mental health provider"
+              },
+              "is_phq_intervention_parent_notified": {
+                "ui:title": "Parent notified of score and plan of care"
+              },
+              "is_phq_intervention_instructions_provided": {
+                "ui:title": "Written discharge instructions provided"
+              },
+              "is_phq_intervention_school_notified": {
+                "ui:title": "Notified School Official to initiate mental health processes/protocol"
+              },
+              "is_phq_intervention_attached_note": {
+                "ui:title": "See attached note sheet"
+              },
+              "is_phq_intervention_columbia_ssrs_administered": {
+                "ui:title": "Columbia SSRS administered"
+              },
+              "columbia_ssrs_section": {
+                "is_columbia_ssrs": {
+                  "ui:description": "Columbia:",
+                  "ui:title": "Columbia SSRS (CPT 96136)"
+                },
+                "is_columbia_notes_provided": {
+                  "ui:title": "See notes for recommendations"
+                }
+              }
+            }
+          }
+        }
+      },
+      "evaluation_management_code": {
+        "ui:title": "E&M LOS"
+      },
+      "is_encounter_for_other_screening": {
+        "ui:title": "ICD 10: Z13.89 Encounter for screening for other disorder"
+      },
+      "is_child_depression": {
+        "ui:title": "ICD 10:Z13.31 Adolescent or child depression (check only if Columbia was done)"
+      }
+    }
+  }
+]

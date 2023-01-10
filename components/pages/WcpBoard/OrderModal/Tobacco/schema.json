@@ -1,0 +1,11 @@
+[
+  {
+    "type": "object",
+    "properties": {
+      "tobaccoUser": {
+        "type": "string",
+        "enum": ["Yes", "No"]
+      }
+    }
+  }
+]

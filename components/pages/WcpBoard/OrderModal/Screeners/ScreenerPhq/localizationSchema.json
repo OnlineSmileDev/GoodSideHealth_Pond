@@ -1,0 +1,98 @@
+[
+  {
+    "PH2": {
+      "interest": {
+        "ui:title": "Little interest or pleasure in doing things",
+        "ui:enumNames": [
+          "Not at all",
+          "Several days",
+          "More than half the days",
+          "Nearly every day"
+        ]
+      },
+      "depression": {
+        "ui:title": "Feeling down, depressed, or hopeless",
+        "ui:enumNames": [
+          "Not at all",
+          "Several days",
+          "More than half the days",
+          "Nearly every day"
+        ]
+      },
+      "PH8": {
+        "sleep": {
+          "ui:title": "Trouble falling or staying asleep, or sleeping too much",
+          "ui:enumNames": [
+            "Not at all",
+            "Several days",
+            "More than half the days",
+            "Nearly every day"
+          ]
+        },
+        "energy": {
+          "ui:title": "Feeling tired or having little energy",
+          "ui:enumNames": [
+            "Not at all",
+            "Several days",
+            "More than half the days",
+            "Nearly every day"
+          ]
+        },
+        "appetite": {
+          "ui:title": "Poor appetite or overeating",
+          "ui:enumNames": [
+            "Not at all",
+            "Several days",
+            "More than half the days",
+            "Nearly every day"
+          ]
+        },
+        "self": {
+          "ui:title": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
+          "ui:enumNames": [
+            "Not at all",
+            "Several days",
+            "More than half the days",
+            "Nearly every day"
+          ]
+        },
+        "concentration": {
+          "ui:title": "Trouble concentrating on things, such as reading the newspaper or watching television",
+          "ui:enumNames": [
+            "Not at all",
+            "Several days",
+            "More than half the days",
+            "Nearly every day"
+          ]
+        },
+        "slow": {
+          "ui:title": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+          "ui:enumNames": [
+            "Not at all",
+            "Several days",
+            "More than half the days",
+            "Nearly every day"
+          ]
+        },
+        "suicide": {
+          "ui:title": "Thoughts that you would be better off dead or of hurting yourself in some way",
+          "ui:enumNames": [
+            "Not at all",
+            "Several days",
+            "More than half the days",
+            "Nearly every day"
+          ]
+        },
+        "difficulty": {
+          "ui:title": "If you checked of any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+          "ui:enumNames": [
+            "Not difficult at all",
+            "Somewhat difficult",
+            "Very difficult",
+            "Extremely difficult"
+          ]
+        }
+      }
+    }
+  }
+]

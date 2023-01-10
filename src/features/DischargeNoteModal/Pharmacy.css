@@ -1,0 +1,61 @@
+.input {
+  border-left: 0px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.input-icon {
+  min-width: 0px !important;
+  background: white;
+  border: 1px solid #47545e;
+  border-right: none;
+  cursor: default;
+  display: flex;
+}
+.input-icon-error {
+  border: 1px solid #dc3545;
+}
+.input-prepend-border-error {
+  border-top-color: #dc3545;
+  border-left-color: #dc3545;
+  border-bottom-color: #dc3545;
+}
+.input-icon:hover {
+  background: unset !important;
+  color: unset !important;
+  border-right: 0px !important;
+  pointer-events: none !important;
+}
+
+.input-icon > img:hover {
+  background: unset !important;
+  color: unset !important;
+}
+
+.input.is-invalid {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.input.is-invalid:focus {
+  box-shadow: none !important;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion-button {
+  background: white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.card-list {
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
